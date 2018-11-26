@@ -1,0 +1,21 @@
+@media(max-width:720px) {
+  .container:after {
+    height: 157px;
+  }
+}
+
+@media(min-width:900px) {
+  .container {
+    width: 750px;
+  }
+}
+
+.row {
+    &:before {
+        content: none;
+    }
+
+    &:after {
+        content: '';
+    }
+}

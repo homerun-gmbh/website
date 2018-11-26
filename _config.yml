@@ -1,0 +1,24 @@
+
+title: HomeRun GmbH  - cut the busywork
+email:
+description:  ""
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: compressed
+include:
+  - '_pages'
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+navigation:
+  - title: Home
+    url: /
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']

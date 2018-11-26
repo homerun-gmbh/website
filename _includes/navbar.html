@@ -1,0 +1,11 @@
+<nav>
+  <div class="topnav text-uppercase" id="myTopnav">
+    {% for nav_item in site.navigation %}
+      {% assign class = nil %}
+        {% if page.url == nav_item.url%}
+          {% assign class = 'active' %}
+        {% endif %}
+      <a href="{{ site.url }}{{ nav_item.url }}" class="{{ class }}">{{ nav_item.title }}</a>
+    {% endfor %}
+  </div>
+</nav>

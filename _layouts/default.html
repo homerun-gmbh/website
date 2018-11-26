@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="de">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+        {{ content }}
+      {% include footer.html %}
+    </div>
+    <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.url}}"></script>
+    <script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.url}}"></script>
+    <script type="text/javascript" src="{{'/assets/interface.js' | prepend: site.url}}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
