@@ -1,5 +1,5 @@
 
-title: HomeRun GmbH  - cut the busywork
+title:
 email:
 description:  ""
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,4 +21,10 @@ navigation:
   - title: Home
     url: /
 
+# contentful:
+#   spaces:
+#     - openTimes: # Jekyll _data folder identifier - Required
+#         space: 3cvoqk78fylc
+#         access_token: 7761a226048b1391d0ad3da9139d9e66f3162ccbe9988647c7aa69c7544945fb
+#         all_entries: true
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
