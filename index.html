@@ -1,14 +1,49 @@
 ---
 layout: default
-title: Home
+title: HomeRun GmbH - cut the busywork
 ---
+<div class="content">
+  <div class="row logo">
+    <div class="col-8 col-md-3">
+      <img
+        class="img-fluid"
+        src="{{'/assets/images/logo.png' | prepend: site.url}}"
+      />
+    </div>
 
-<div class="container">
+    <div class="col-2 offset-3 mr-auto d-none d-md-block">
+      <img
+        class="monogram"
+        src="{{'/assets/images/monogram.png' | prepend: site.url}}"
+      />
+    </div>
+  </div>
+
   <div class="row">
-    <div class="col-6">
-      <h1 class="text-primary">Hello there!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium corporis ipsam cumque rerum quas quia neque, dolor vitae laboriosam.</p>
-      <i class="fas fa-thumbs-up fa-2x"></i>
+    <div class="col-12 col-md-6 what-we-do">
+      <p>
+        Wir bauen die besten Tools für ihre Hausverwaltung. <br>Bald.
+      </p>
+
+      <button>
+          KONTAKT AUFNEHMEN
+        </button>
+    </div>
+
+    <div class="col-12 col-md-6 secure-advice">
+      <p>Wir legen allerhöchsten Werd auf die sicherheit ihrer Daten.</p>
+      <p>
+        Zur Übertragung Ihrer Daten verwenden wir auschließlich sichere, verschlüsselte Verbindungen(TLS/SSL), sodass diese nicht von Unbefugten abgegriffen werden können.
+      </p>
+    </div>
+  </div>
+
+  <div class="row d-flex d-md-none">
+    <div class="col-5 mr-auto">
+      <img
+        class="monogram"
+        src="{{'/assets/images/monogram.png' | prepend: site.url}}"
+      />
     </div>
   </div>
 </div>

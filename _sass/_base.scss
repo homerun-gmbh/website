@@ -1,21 +1,117 @@
-@media(max-width:720px) {
-  .container:after {
-    height: 157px;
+html {
+  background: url('../assets/images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100%;
+  align-items: center;
+};
+
+body {
+  color:#023052;
+  background-color: transparent;
+  height: 100%;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 2em;
   }
 }
 
-@media(min-width:900px) {
-  .container {
-    width: 750px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 750px;
+
+  @include media-breakpoint-down(sm) {
+    max-width: 300px;
   }
 }
 
-.row {
-    &:before {
-        content: none;
-    }
+.content {
+  background-color: white;
+  padding: 2.5em;
+  border-bottom: 5px #023052 solid;
+}
 
-    &:after {
-        content: '';
+.logo {
+  padding-bottom: 2.5em;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  p {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2.5em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.3em;
     }
+  }
+}
+
+.secure-advice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 3.5em;
+    font-size: .8em;
+    margin-bottom: 3.5em;
+  }
+}
+
+.monogram {
+  max-width: 50%;
+  height: auto;
+}
+
+button {
+  background: transparent;
+  border: 2px #ED5A23 solid;
+  text-transform: capitalize;
+  color: #ED5A23;
+  font-weight: bold;
+  font-family: $nirmit;
+  padding: 5px 10px 5px 10px;
+
+  &:hover {
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.1)
+  }
+
+  &:active {
+    box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2)
+  }
+
+  &:focus {
+    outline:none;
+  }
+}
+
+footer {
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  font-family: $nirmit;
+  width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    text-align: left;
+    margin-top: 3em;
+  }
 }
