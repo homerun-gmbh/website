@@ -1,9 +1,9 @@
 
-title:
-email:
-description:  ""
+title: "HomeRun - Cut the busy work"
+email: "hello@homerun-gmbh.de"
+description:  "HomeRun -Entwicklt AI gestütze Assistenten im Bereich Immobilienverwaltung"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.homerun-gmbh.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
 
@@ -21,10 +21,4 @@ navigation:
   - title: Home
     url: /
 
-# contentful:
-#   spaces:
-#     - openTimes: # Jekyll _data folder identifier - Required
-#         space: 3cvoqk78fylc
-#         access_token: 7761a226048b1391d0ad3da9139d9e66f3162ccbe9988647c7aa69c7544945fb
-#         all_entries: true
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
