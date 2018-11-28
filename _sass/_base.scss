@@ -49,13 +49,14 @@ body {
 }
 
 .secure-advice {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-weight: bold;
 
-  p:last-child {
-    margin-bottom: 0;
+  p {
+    margin-bottom: 2em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
