@@ -46,6 +46,32 @@ body {
     line-height: 1.2;
     margin-bottom: 2.5em;
   }
+
+  a {
+    background: transparent;
+    border: 2px #ED5A23 solid;
+    text-transform: capitalize;
+    color: #ED5A23;
+    font-weight: bold;
+    font-family: $nirmit;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.1);
+    text-decoration: none;
+
+    &:hover {
+      color: #ED5A23;
+      text-decoration: none;
+    }
+    &:active {
+      box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline:none;
+      text-decoration: none;
+    }
+  }
 }
 
 .secure-advice {
@@ -65,31 +91,7 @@ body {
   height: auto;
 }
 
-a {
-  background: transparent;
-  border: 2px #ED5A23 solid;
-  text-transform: capitalize;
-  color: #ED5A23;
-  font-weight: bold;
-  font-family: $nirmit;
-  padding: 5px 10px 5px 10px;
-  box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.1);
-  text-decoration: none;
 
-  &:hover {
-    color: #ED5A23;
-    text-decoration: none;
-  }
-  &:active {
-    box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
-    text-decoration: none;
-  }
-
-  &:focus {
-    outline:none;
-    text-decoration: none;
-  }
-}
 
 footer {
   font-weight: bold;
@@ -97,6 +99,33 @@ footer {
   text-align: center;
   font-family: $nirmit;
   width: 100%;
+
+  #impressumButton {
+    font-weight: bold;
+    color:#023052;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.modal {
+  font-weight: 500;
+  text-align: left;
+
+  p, ul {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -118,9 +147,7 @@ footer {
   }
 
   footer {
-    @include media-breakpoint-down(sm) {
-      text-align: left;
-      margin-top: 3em;
-    }
+    text-align: left;
+    margin-top: 3em;
   }
 }
