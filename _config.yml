@@ -12,7 +12,8 @@ sass:
   sass_dir: _sass
   style: compressed
 include:
-  - '_pages'
+  - _pages
+  - .well-known
 markdown: kramdown
 exclude:
   - Gemfile
