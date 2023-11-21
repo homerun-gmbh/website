@@ -2,7 +2,7 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
     "target": {
-      "namespace": "android_app",
+      "namespace": "app.emilia",
       "package_name": "app.emilia.beta",
       "sha256_cert_fingerprints":
         ["59:B9:C2:6A:96:AF:ED:51:6F:3C:B3:EB:6B:D3:15:5B:9F:E7:9D:FB:66:47:9E:A9:22:06:8E:64:15:9B:08:54"]
@@ -11,7 +11,7 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
     "target": {
-      "namespace": "android_app",
+      "namespace": "app.emilia",
       "package_name": "app.emilia",
       "sha256_cert_fingerprints":
         ["E6:10:CA:68:A8:D1:CB:33:2D:4C:4F:86:D2:1D:88:B5:D8:58:ED:C3:28:3D:F8:58:F5:24:7F:B4:00:3F:59:68"]
