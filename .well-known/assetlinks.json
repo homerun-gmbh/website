@@ -16,5 +16,14 @@
       "sha256_cert_fingerprints":
         ["E6:10:CA:68:A8:D1:CB:33:2D:4C:4F:86:D2:1D:88:B5:D8:58:ED:C3:28:3D:F8:58:F5:24:7F:B4:00:3F:59:68"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.emilia",
+      "sha256_cert_fingerprints":
+        ["FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"]
+    }
   }
 ]
